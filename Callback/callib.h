@@ -6,7 +6,7 @@
 
 /******************************************************************************
  * 
- * @file    main.c
+ * @file    callib.h
  * 
  * @brief   ;
  * 
@@ -20,36 +20,21 @@
  * @copyright GNU General Public License v3
  *****************************************************************************/
 
-// === Libraries and header files ===
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef CALLIB_H
+#    define CALLIB_H
 
-/// @privatesection
+// === Libraries and header files ===
+
 // === Constants and Macro definitions ===
 
 // === Enumerations, structures and typedefs ===
 
 // === Global variables ===
 
-// === Function prototypes for private functions with file level scope ===
-
-// === ROM Constant variables with file level scope ===
-
-// === Static variables and constant variables with file level scope ===
+// === ROM Constant variables ===
 
 // === Global function definitions ===
-/// @publicsection
 
-/**
- * @brief Main
- */
+int parseCmdLine(int argc, char *argv[], void *userData);
 
-int
-main(int argc, char* argv [])
-{
-
-    return (EXIT_SUCCESS);
-}
-
-/// @privatesection
-// === Local function definitions ===
+#endif /* CALLIB_H */

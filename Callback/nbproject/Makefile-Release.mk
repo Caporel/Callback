@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/6d025a9/callib.o \
+	${OBJECTDIR}/_ext/6d025a9/test.o \
 	${OBJECTDIR}/main.o
 
 
@@ -61,6 +63,16 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/callback: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/callback ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/_ext/6d025a9/callib.o: /home/gino/NetBeansProjects/Callback/Callback/Callback/callib.c
+	${MKDIR} -p ${OBJECTDIR}/_ext/6d025a9
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6d025a9/callib.o /home/gino/NetBeansProjects/Callback/Callback/Callback/callib.c
+
+${OBJECTDIR}/_ext/6d025a9/test.o: /home/gino/NetBeansProjects/Callback/Callback/Callback/test.c
+	${MKDIR} -p ${OBJECTDIR}/_ext/6d025a9
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6d025a9/test.o /home/gino/NetBeansProjects/Callback/Callback/Callback/test.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}

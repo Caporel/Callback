@@ -6,7 +6,7 @@
 
 /******************************************************************************
  * 
- * @file    main.c
+ * @file    callib.c
  * 
  * @brief   ;
  * 
@@ -24,6 +24,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// This file
+#include "callib.h"
+
 /// @privatesection
 // === Constants and Macro definitions ===
 
@@ -37,19 +40,11 @@
 
 // === Static variables and constant variables with file level scope ===
 
+
 // === Global function definitions ===
 /// @publicsection
 
-/**
- * @brief Main
- */
-
-int
-main(int argc, char* argv [])
-{
-
-    return (EXIT_SUCCESS);
-}
+int parseCmdLine(int argc, char *argv[],  void *userData);
 
 /// @privatesection
 // === Local function definitions ===

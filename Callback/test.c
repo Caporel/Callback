@@ -6,7 +6,7 @@
 
 /******************************************************************************
  * 
- * @file    main.c
+ * @file    test.c
  * 
  * @brief   ;
  * 
@@ -24,6 +24,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// This file
+
+
 /// @privatesection
 // === Constants and Macro definitions ===
 
@@ -39,17 +42,6 @@
 
 // === Global function definitions ===
 /// @publicsection
-
-/**
- * @brief Main
- */
-
-int
-main(int argc, char* argv [])
-{
-
-    return (EXIT_SUCCESS);
-}
 
 /// @privatesection
 // === Local function definitions ===
