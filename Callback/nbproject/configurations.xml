@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>/home/gino/NetBeansProjects/Callback/Callback/Callback/callib.h</itemPath>
       <itemPath>/home/gino/NetBeansProjects/Callback/Callback/Callback/main.h</itemPath>
+      <itemPath>/home/gino/NetBeansProjects/Callback/Callback/Callback/test.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -63,6 +64,11 @@
             tool="0"
             flavor2="0">
       </item>
+      <item path="/home/gino/NetBeansProjects/Callback/Callback/Callback/test.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
@@ -104,6 +110,11 @@
       <item path="/home/gino/NetBeansProjects/Callback/Callback/Callback/test.c"
             ex="false"
             tool="0"
+            flavor2="0">
+      </item>
+      <item path="/home/gino/NetBeansProjects/Callback/Callback/Callback/test.h"
+            ex="false"
+            tool="3"
             flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">

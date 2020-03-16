@@ -44,7 +44,40 @@
 // === Global function definitions ===
 /// @publicsection
 
-int parseCmdLine(int argc, char *argv[],  void *userData);
+/*
+ Comentsrios espantosos
+ Falta callback y agregar datos a memoria
+ */
+int
+parseCmdLine(int argc, char *argv[], void *userData)
+{
+    int result=0, i;
+
+    for(i = 1; i < argc; i++)
+    {
+        if((*(argv[i]) == '-')&&(argv[i+1] == NULL))  //Error de tipo 1
+        {                                          //Encontro clave sin su valor
+            result=-EXIT_FAILURE;
+            i=argc;
+        }
+        else if((*(argv[i]) == '-')&&(*((argv[i])+1) == '\0')) //Error de tipo 2
+        {                                        //Encontro opcion sin su clave
+            result=-EXIT_FAILURE;
+            i=argc;
+        }
+        else if((*(argv[i]) == '-')&&(argv[i] != NULL)) //Encontro opcion
+        {
+            i++;        //Avanzo dos(este mas el del for())
+            result++;
+        }
+        else                                            //Encontro parametro
+        {
+            result++;
+        }
+    
+    }
+    return result;
+}
 
 /// @privatesection
 // === Local function definitions ===
